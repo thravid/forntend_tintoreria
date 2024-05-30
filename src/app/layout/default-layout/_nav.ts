@@ -12,6 +12,38 @@ export const navItems: INavData[] = [
   },
   {
     title: true,
+    name: 'Indice Tintoreria'
+  },
+  {
+    name: 'Tintoreria',
+    url: '/tintoreria',
+    iconComponent: { name: 'cil-puzzle' },
+    children: [
+      {
+        name: 'Cliente',
+        url: '/tintoreria/cliente',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Recibo',
+        url: '/tintoreria/recibo',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Entrega',
+        url: '/tintoreria/entrega',
+        icon: 'nav-icon-bullet'
+      },
+      {
+        name: 'Reportes',
+        url: '/tintoreria/reportes',
+        icon: 'nav-icon-bullet'
+      }
+    ]
+  },
+
+  {
+    title: true,
     name: 'Theme'
   },
   {

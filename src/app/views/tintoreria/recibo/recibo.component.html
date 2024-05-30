@@ -1,0 +1,108 @@
+<c-col xs="12">
+<c-card class="mb-4">
+    <c-card-header ngPreserveWhitespaces>
+      <strong>Registro Recibo</strong> <small>l</small>
+    </c-card-header>
+    <c-card-body>
+   
+     
+      
+        <form cForm class="row g-3">
+          <c-col md="6">
+            <label cLabel for="inputEmail4">Fecha Ingreso</label>
+            <input cFormControl id="fechaIngreso" type="David Fe...." />
+          </c-col>
+         <c-col md="6">
+          <label cLabel for="inputPassword4">Fecha Entrega</label>
+            <input cFormControl id="fechaEntrega" type="password" />
+         </c-col>
+          <c-col xs="12">
+            <label cLabel for="inputAddress">Detalle</label>
+            <input cFormControl id="detatalle" placeholder="Trabajo..." />
+          </c-col>
+          <c-col xs="12">
+            <label cLabel for="inputAddress2">Precio Total</label>
+            <input cFormControl id="precio" placeholder="Bs." type="number"/>
+          </c-col>
+         <!-- <c-col md="6">
+            <label cLabel for="inputCity">City</label>
+            <input cFormControl id="inputCity" />
+          </c-col>
+          <c-col md="4">
+            <label cLabel for="inputState">State</label>
+            <select cSelect id="inputState">
+              <option>Choose...</option>
+              <option>...</option>
+            </select>
+          </c-col>
+          <c-col md="2">
+            <label cLabel for="inputZip">Zip</label>
+            <input cFormControl id="inputZip" />
+          </c-col>
+          <c-col xs="12">
+            <c-form-check>
+              <input cFormCheckInput id="gridCheck" name="gridCheck" type="checkbox" />
+              <label cFormCheckLabel for="gridCheck">Check me out</label>
+            </c-form-check>
+          </c-col>-->
+          <c-col xs="12">
+            <label cLabel for="usuarios">Selecciona-Usuario</label>
+            <select aria-label="Default select example" cSelect>
+              <option>Usuarios </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </c-col>
+          <c-col xs="12">
+            <button cButton type="submit">Guardar</button>
+          </c-col>
+        </form>
+        
+       
+        <c-col xs="12">
+          <c-card class="mb-4">
+            <c-card-header>
+              <strong>Recibo</strong> <small></small>
+            </c-card-header>
+            <c-card-body>
+              
+                <table [striped]="true" cTable>
+                  <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Telefono-Respaldo</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    @for (reciboDato of listaRecibo; track reciboDato;) {
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>{{reciboDato.FechaIngreso}}</td>
+                        <td>{{reciboDato.Detalle}}</td>
+                        <td>{{reciboDato.FechaEntrega}}</td>
+                        <td>{{reciboDato.Precio}}</td>
+                        <td>{{reciboDato.cliente}}</td>
+                        <td><button  cButton color="warning" variant="outline">Editar</button>
+                        <button  cButton color="danger" variant="outline">Eliminar </button>
+                        </td>
+                      </tr>
+
+                    }
+                  
+                 
+                  </tbody>
+                </table>
+              
+            </c-card-body>
+          </c-card>
+        </c-col>
+       
+    </c-card-body>
+  </c-card>
+</c-col>
+
+
+  

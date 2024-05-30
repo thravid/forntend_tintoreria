@@ -13,7 +13,8 @@
     }
   },
   "files": [
-    "src/main.ts"
+    "src/main.ts",
+    "./src/app/views/tintoreria/cliente/ClienteComponent.ts"
   ],
   "include": [
     "src/**/*.d.ts"
